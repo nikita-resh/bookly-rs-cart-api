@@ -1,0 +1,14 @@
+# service folders
+.git
+.vscode
+
+# while building docker container creates dist folder inside itself,
+# so there is not need to copy dist folder to docker container
+dist
+
+# while building docker container install node_modules folder inside itself,
+# so there is not need to copy node_modules folder to docker container
+node_modules
+
+# there is no need in having tests in production image
+test
